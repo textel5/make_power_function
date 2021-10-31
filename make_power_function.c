@@ -14,7 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with listint.  If not, see <https://www.gnu.org/licenses/>.
 */
-#include "make_powerfunction.h"
+#include "make_power_function.h"
 
 #define MAKE_POWER_FUNCTION(TYPE) \
   TYPE TYPE ## _power(const TYPE num, const int pow) \
