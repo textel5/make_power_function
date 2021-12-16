@@ -14,7 +14,17 @@
     You should have received a copy of the GNU General Public License
     along with make_power_function.  If not, see <https://www.gnu.org/licenses/>.
 */
-#ifndef MAKE_POWER_FUNCTION_SENTRY
-#define MAKE_POWER_FUNCTION_SENTRY
-int int_power(const int num, const int pow);
+
+#ifndef MAKE_POWER_FUNTION_H_SENTRY
+#define MAKE_POWER_FUNCTION_H_SENTRY
+#define MAKE_POWER_FUNCTION(TYPE) \
+  TYPE TYPE ## _power(const TYPE num, const int pow) \
+  { \
+    TYPE result; \
+    int i; \
+    for (i = 0, result = num; i < pow; i++) { \
+      result *= num; \
+    } \
+    return result; \
+  }
 #endif
